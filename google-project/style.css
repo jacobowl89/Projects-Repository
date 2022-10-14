@@ -13,7 +13,7 @@ header {
 .icon {
     margin: 10px;
     align-self: center;
-    cursor:grab;
+    cursor:pointer;
 
 }
 
@@ -115,7 +115,7 @@ input {
 
     padding: 8px 5px 7px 5px;
 
-    cursor:grab;
+    cursor:pointer;
     
 }
 
@@ -128,7 +128,7 @@ input {
 
     padding: 8px 5px 7px 5px;
 
-    cursor:grab;
+    cursor:pointer;
     
 }
 
@@ -166,7 +166,7 @@ input {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    cursor: grab;
+    cursor: pointer;
     border-radius: 5px;
 }
 

@@ -1,0 +1,242 @@
+body {
+    font-family: arial,sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    font-size: 0.92rem;
+    font-family: arial,sans-serif;
+    
+}
+
+.icon {
+    margin: 10px;
+    align-self: center;
+    cursor:grab;
+
+}
+
+.gmail:hover, .images:hover {
+    text-decoration: underline;
+    
+}
+
+
+#circle:hover {
+    
+    background-color: rgba(177, 175, 166, 0.17);;
+}
+
+.menu {
+    display: flex;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 400,
+  'opsz' 36;
+}
+
+.apps {
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 400,
+  'opsz' 36;
+}
+
+
+#circle{
+    color: grey;
+    margin: 0px;
+    padding: 3px;
+    padding-left: 8px;
+    padding-top: 8px;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.rest-image {
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#google {
+    padding-top: 115px;
+    width: 272px;
+}
+
+.rest-input {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-wrapper {
+    height: 100%;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px 0px 10px;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.212), 0px -2px 5px rgba(136, 136, 136, 0.212)
+}
+
+input {
+    width: 470px;
+    height: 38px;
+    border-color: transparent;
+    /* border-radius: 30px; */
+    outline:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+.magnifier {
+    border-width: 1px;
+    border-style: solid none solid solid;
+    border-radius: 30px 0px 0px 30px;
+    border-color: transparent;
+    /* box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.212), 0px -2px 5px rgba(136, 136, 136, 0.219); */
+
+    padding: 8px 5px 7px 5px;
+
+    cursor:grab;
+    
+}
+
+.mic {
+    border-width: 1px;
+    border-style: solid solid solid none;
+    border-radius: 0px 30px 30px 0px;
+    border-color: transparent;
+    /* box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.212), 0px -2px 5px rgba(136, 136, 136, 0.219); */
+
+    padding: 8px 5px 7px 5px;
+
+    cursor:grab;
+    
+}
+
+.end {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-apps {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0px;
+    width: 450px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.app {
+    width: 112px;
+    height: 112px;
+    border-style: solid;
+    border-width: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.app:hover {
+    background-color: rgba(211, 211, 211, 0.541)
+}
+
+.top {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-style: solid;
+    border-width: 0px;
+}
+
+.bottom {
+    display: flex;
+    width: 104px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-width: 0px;
+    margin-top: -20px;
+}
+
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.83rem;
+}
+
+#img-circle{
+    margin: 0px;
+    padding: 7px;
+    padding-left: 12px;
+    padding-top: 12px;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background-color: rgb(243, 241, 240);
+    margin-top: -40px;
+
+}
+
+.corner-menu#circle {
+    transition: 0.05s;
+    height: fit-content;
+    width: fit-content;
+    margin-top: -0px;
+    margin-bottom: -0px;
+    padding: 3px 3px 0px 3px;
+    align-self: end;
+    background-color: transparent;
+    color: transparent;
+}
+
+.corner-new.corner-menu#circle {
+    transition: 0.3s;
+    color: gray;
+}
+
+.corner-new.corner-menu#circle:hover {
+    background-color: rgba(177, 175, 166, 0.17);;
+
+}
+

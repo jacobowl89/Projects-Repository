@@ -1,0 +1,88 @@
+#calculation, #result { 
+    font-size: 55px;
+    text-align: right;
+    width: 388px;
+    
+}
+
+
+.content {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 396px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #add, #subtract, #multiply, #divide, #equal, #clear, #backspace, #dot {
+    transition: 0.15s;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 130px;
+    height: 130px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change {
+    transition: 0.15s;
+    background-color: antiquewhite;
+    scale: 0.96;
+    box-shadow: inset 0px 0px 40px rgb(238, 192, 135);
+    
+}
+
+.superChange {
+    transition: 0.15s;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 130px;
+    height: 130px;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(241, 218, 187);
+    scale: 0.9;
+    box-shadow: inset 0px 0px 40px rgb(238, 192, 135);
+}
+
+.superChangeDif {
+    transition: 0.15s;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 130px;
+    height: 130px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(241, 218, 187);
+    scale: 0.9;
+    box-shadow: inset 0px 0px 40px rgb(238, 192, 135);
+}
+
+#clear, #backspace {
+    font-size: 25px;
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover, #add:hover, #subtract:hover, #multiply:hover, #divide:hover, #equal:hover, #clear:hover, #backspace:hover, #dot:hover {
+    transition: 0.15s;
+    background-color: antiquewhite;
+    scale: 0.96;
+}
+
+.rowOne, .rowTwo, .rowThree, .rowExtra, .rowFunctions, .rowCredit {
+    display: flex;
+}

@@ -17,6 +17,22 @@ const nine = document.querySelector("#nine")
 const playerInfo = document.querySelector(".playerInfo")
 const scoreInfo = document.querySelector(".scoreInfo")
 
+const content = document.querySelector(".content")
+
+const button = document.querySelector("#reset")
+
+const btnList = [one,two,three,four,five,six,seven,eight,nine]
+
+button.addEventListener("click", () => {
+
+    content.classList.add("click")
+    button.classList.add("click")
+    setTimeout(() => {button.classList.remove("click");
+                        content.classList.remove("click")},100)
+
+    colorDraw()
+})
+
 
 
 function randomPlayer() {
@@ -29,53 +45,78 @@ function randomPlayer() {
 
 function updateInfo(player) {
     const playerInfo = document.querySelector(".playerInfo")
+    
     playerInfo.textContent = `Player: ${player}`
 
     const scoreInfo = document.querySelector(".scoreInfo")
     scoreInfo.textContent = `Player X: ${playerScore} | Player O: ${computerScore}` 
 }
 
+function colorDraw(){
+    for (i of btnList) {
+        i.classList.add("draw")}
+
+    setTimeout(() => {for (i of btnList) 
+        {i.classList.remove("draw")}}
+        , 300)
+}
+
+function colorWinner(btn1, btn2, btn3, player) {
+        btn1.classList.add("win")
+        btn2.classList.add("win")
+        btn3.classList.add("win")
+
+        setTimeout(() => {endRound(player);
+            btn1.classList.remove("win");
+            btn2.classList.remove("win");
+            btn3.classList.remove("win");
+            const scoreInfo = document.querySelector(".scoreInfo")
+            scoreInfo.textContent = `Player X: ${playerScore} | Player O: ${computerScore}` 
+            }, 900);
+}
+
 function checkGame(player){
     
     if (one.textContent == player && two.textContent == player && three.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(one,two,three,player)
     }
+
     else if (four.textContent == player && five.textContent == player && six.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(four,five,six,player)
     }
     else if (seven.textContent == player && eight.textContent == player && nine.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(seven,eight,nine,player)
     }
 
     else if (one.textContent == player && four.textContent == player && seven.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(one,four,seven,player)
     }
     else if (two.textContent == player && five.textContent == player && eight.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(two,five,eight,player)
     }
     else if (three.textContent == player && six.textContent == player && nine.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(three,six,nine,player)
     }
 
     else if (one.textContent == player && five.textContent == player && nine.textContent == player){
         console.log(`${player} Won!`)
-        endRound(player)
+        colorWinner(one,five,nine,player)
     }
     else if (three.textContent == player && five.textContent == player && seven.textContent == player){
         console.log(`${player} Won!`);
-        endRound(player)
+        colorWinner(three,five,seven,player)
     }
     else if (moves == 9){
         endRound("Draw")
-
-    }
-    }
+        
+        colorDraw()
+    }}
 
 function announceWinner(player){
     scoreInfo.textContent = `Player ${player} won the game!`
@@ -103,9 +144,17 @@ function clearBoard(){
 function endRound(player){
     if (player == "X"){
         playerScore += 1
+        if (playerScore == 5) {
+            playerInfo.textContent = "Player 'X' Won !"
+            playerScore.textContent = ""
+        }
     }
     else if (player == "O") {
         computerScore += 1
+        if (computerScore == 5) {
+            playerInfo.textContent = "Player 'O' Won !"
+            playerScore.textContent = ""
+        }
     }
     clearBoard()
 
@@ -141,7 +190,7 @@ fields.forEach(field =>
         else 
             {player = "X"}
         
-        updateInfo(player)
+            updateInfo(player)
 
         if (playerScore == 5){
             clearBoard()
@@ -156,12 +205,12 @@ fields.forEach(field =>
 })})
 }
 
-const btnReset = document.querySelector("#reset")
 
-btnReset.addEventListener("click", () => {
+button.addEventListener("click", () => {
     resetScore()
-    clearBoard()
+    setTimeout(() => {clearBoard()}, 300) 
     updateInfo("?")
+    moves = 0
 })
 
 game()

@@ -1,0 +1,333 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
+
+body {
+    
+}
+
+.content {
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+.headerContent {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+
+
+    margin: 0px;
+    padding: 10px;
+
+    width: 100%;
+    height: 50px;
+    border: 0px solid black;
+    border-style: none none solid none;
+    box-shadow: 0px 10px 10px rgba(136, 136, 136, 0.233);
+
+    background-color: white;
+    
+
+
+
+}
+
+.bothHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftHeader {
+    transition: 0.15s;
+
+    font-family: 'Bungee', cursive;
+    margin: 0px 13px 0px 10px;
+    font-size: 40px;
+    text-shadow: 3px 3px 1px #ababab;
+    color: rgb(75, 73, 73);
+    cursor: pointer;
+
+}
+
+.rightHeader {
+display: flex;
+}
+
+.github {
+    transition: 0.15s;
+    filter: brightness(40%);
+    width: 35px;
+    height: 35px;
+    margin-top: 3px;
+    margin-right: 7px;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.fullMenu {
+
+}
+
+
+.rest {
+    transition: 5s;
+    padding: 70px;
+    margin-top: 80px;
+    width: 1000px;
+    height: 3300px;
+    box-shadow: 5px 0px 10px rgba(136, 136, 136, 0.233), -5px 0px 10px rgba(136, 136, 136, 0.233);
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+.invisible {
+    transition: 5s;
+    opacity: 0%;
+}
+.aboutMeTitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bungee', cursive;
+    font-size: 33px;
+    text-shadow: 3px 3px 1px #ababab;
+    color: rgba(75, 73, 73, 0.801);
+
+
+}
+
+hr {
+    margin: 20px;
+    border: none;
+    border-top: 3px double grey;
+    color: grey;
+    overflow: visible;
+    text-align: center;
+    /* box-shadow: 5px 0px 10px rgba(136, 136, 136, 0.233), -5px 0px 10px rgba(136, 136, 136, 0.233); */
+    
+}
+
+
+
+.aboutMe {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.CV {
+    width: 500px;
+    box-shadow: 5px 0px 10px rgba(136, 136, 136, 0.233), -5px 0px 10px rgba(136, 136, 136, 0.233);
+    
+}
+
+.descriptionWrapper {
+    border: 0px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.openCV {
+    padding: 10px;
+    width: fit-content;
+    box-shadow: 5px 0px 10px rgba(136, 136, 136, 0.233), -5px 0px 10px rgba(136, 136, 136, 0.233);
+
+}
+
+.aboutProjectsTitle { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Bungee', cursive;
+    font-size: 33px;
+    text-shadow: 3px 3px 1px #ababab;
+    color: rgba(75, 73, 73, 0.801);
+
+}
+
+
+.googleProject, .calculatorProject, .tictactoeProject, .drawingboardProject {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: 0px solid black;
+    margin-bottom: 20px;
+}
+
+.calculatorProject {
+    width: 830px;
+    justify-content: space-between;
+}
+
+.googleProjectButtons, .calculatorProjectButtons, .tictactoeProjectButtons, .drawingboardProjectButtons {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.googleProjectImg,.calculatorProjectImg, .tictactoeProjectImg, .drawingboardProjectImg {
+    transition: 0.2s;
+    box-shadow: 5px 0px 10px rgba(136, 136, 136, 0.233), -5px 0px 10px rgba(136, 136, 136, 0.233);
+    margin-top: 30px;
+    width: 600px;
+
+}
+
+
+
+
+
+.calculatorProjectImg {
+    width: 350px;
+}
+
+/* |||||||||||||||||||||||||| */
+/* EXTRAS */
+/* |||||||||||||||||||||||||| */
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 48;
+}
+
+.contact.material-symbols-outlined {
+    transition: 0.15s;
+    font-size: 35px;
+    border-radius: 30px;
+    padding: 6px 7px 5px 8px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 15px;
+}
+
+
+.contact.material-symbols-outlined:hover {
+    background-color: rgba(177, 175, 166, 0.17);;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.pressed {
+    transition: 0.15s;
+    scale: 0.9;
+}
+
+.googleProjectImg:hover,.calculatorProjectImg:hover, .tictactoeProjectImg:hover, .drawingboardProjectImg:hover {
+    transition: 0.15s;
+    scale: 0.9;
+    filter: opacity(70%) brightness(99%);
+
+}
+
+
+
+.github:hover {
+    background-color: rgba(177, 175, 166, 0.17);;
+}
+
+
+div[class*=box] {
+    flex-direction: column;
+    height: 33.33%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.box-1 { background-color: white; }
+
+.btn {
+    margin: 10px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+  
+  /* 
+  ========================
+        BUTTON ONE
+  ========================
+  */
+  .btn-one {
+    color: gray;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(100, 92, 92, 0.5);
+    border-bottom-color: rgba(100, 92, 92, 0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(61, 59, 59, 0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }

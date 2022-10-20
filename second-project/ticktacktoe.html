@@ -1,0 +1,184 @@
+!
+<script>
+
+    
+
+    let agree = confirm("Do you wanna play TickTackToe?");
+    console.log(agree)
+    if (agree === false) {
+        throw new Error("Game Cancelled");
+    }
+
+
+
+    let upLeft = " "
+    let upCenter = " "
+    let upRight = " "
+
+    let left = " "
+    let center = " "
+    let right = " "
+
+    let downLeft = " "
+    let downCenter = " "
+    let downRight = " "
+
+
+
+    let board = `${upLeft} | ${upCenter} | ${upRight}\n${left} | ${center} | ${right}\n${downLeft} | ${downCenter} | ${downRight}`
+
+
+
+    function updateBoard() {
+        board = `${upLeft} | ${upCenter} | ${upRight}\n${left} | ${center} | ${right}\n${downLeft} | ${downCenter} | ${downRight}`;
+    }
+
+
+    function checkWin(){
+        // Win for X:
+        //Horizontal
+        if (upLeft === "X" && upCenter === "X" && upRight === "X")
+         {console.log("You won! Up Horizontal"); throw new Error("You won !");}
+        else if (left === "X" && center === "X" && right === "X")
+         {console.log("You won! Center Horizontal"); throw new Error("You won !");}
+        else if (downLeft === "X" && downCenter === "X" && downRight === "X")
+         {console.log("You won! Down Horizontal"); throw new Error("You won !");}
+
+         //Vertical
+        else if (upLeft === "X" && left === "X" && downLeft === "X")
+         {console.log("You won! Left Vertical"); throw new Error("You won !");}
+        else if (upCenter === "X" && center === "X" && downCenter === "X")
+         {console.log("You won! Center Vertical"); throw new Error("You won !");}
+        else if (upRight === "X" && right === "X" && downRight === "X")
+         {console.log("You won! Right Vertical"); throw new Error("You won !");}
+
+        //Across
+        else if (upLeft === "X" && center === "X" && downRight === "X")
+         {console.log("You won! UpLeft to DownRight Cross"); throw new Error("You won ! ");}
+        else if (downLeft === "X" && center === "X" && upRight === "X")
+         {console.log("You won! UpRight to DownLeft Cross"); throw new Error("You won !");}
+
+
+
+        // Win for O:
+        //Horizontal
+        else if (upLeft === "O" && upCenter === "O" && upRight === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        else if (left === "O" && center === "O" && right === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        else if (downLeft === "O" && downCenter === "O" && downRight === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+
+         //Vertical
+        else if (upLeft === "O" && left === "O" && downLeft === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        else if (upCenter === "O" && center === "O" && downCenter === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        else if (upRight === "O" && right === "O" && downRight === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+
+        //Across
+        else if (upLeft === "O" && center === "O" && downRight === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        else if (downLeft === "O" && center === "O" && upRight === "O")
+         {console.log("You won!"); throw new Error("You lost !");}
+        
+    }
+
+
+
+    let choice = ['UpLeft', 'Up', 'UpRight', 'Left', 'Center', 'Right', 'DownLeft', 'Down', 'DownRight']
+
+    function checkMove(move,sign) {
+        if (sign === "computer"){
+            sign = "O";}
+        else if (sign === "player") {
+            sign = "X"
+        }
+        
+
+        if (move
+                 === "UpLeft") { upLeft = sign }
+                else if (move
+                 === "Up") { upCenter = sign }
+                else if (move
+                 === "UpRight") { upRight = sign }
+
+                else if (move
+                 === "Left") { left = sign }
+                else if (move
+                 === "Center") { center = sign }
+                else if (move
+                 === "Right") { right = sign }
+
+                else if (move
+                 === "DownLeft") { downLeft = sign }
+                else if (move
+                 === "Down") { downCenter = sign }
+                else if (move
+                 === "DownRight") { downRight = sign }}
+            
+     
+
+
+    function askMove() {
+        let x = 1;
+        while (x < 2) {
+            let playerMove
+             = prompt(`Where do you want to Move?\n\n${choice.join(" | ")}`);
+            console.log(x);
+
+            console.log(choice.includes(playerMove
+            ))
+
+            if (choice.includes(playerMove
+            )) {
+                x++
+                choice.splice(choice.indexOf(playerMove), 1);
+
+                checkMove(playerMove, "player")
+            }
+        }
+    }
+
+    function computerTurn() {
+        computerMove = choice[Math.floor(Math.random() * choice.length)];
+        choice.splice(choice.indexOf(computerMove), 1);
+        checkMove(computerMove, "computer")
+        updateBoard()
+        console.log(choice)
+        checkWin()
+
+
+    }
+
+    function playerTurn() {
+        askMove()
+        console.log(choice)
+        updateBoard()
+        
+
+    }
+
+   
+
+    function playRound() {
+        while (choice.length > 0){
+                playerTurn();
+                console.log(`Player: \n${board}`);
+                checkWin();
+                computerTurn();
+                console.log(`Computer: \n${board}`)};
+                checkWin()
+
+
+    }
+
+ playRound()
+
+
+
+
+
+
+</script>

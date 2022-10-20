@@ -1,0 +1,68 @@
+<script>
+    let choiceList = ["Paper","Rock", "Scissors"]
+    let playerScore = 0
+    let computerScore = 0
+    let totalScore = `${playerScore}:${computerScore}`
+    let count = 0
+
+    function computerChoice() {
+        computerMove = choiceList[Math.floor(Math.random() * choiceList.length)];
+        return computerMove;
+    }
+
+    function playerChoice(){
+        playerMove = prompt("Rock, Paper or Scissors?");
+        return playerMove;
+    }
+
+    function addScore(win){
+        if (win === "player"){
+            playerScore += 1;
+            totalScore = `${playerScore}:${computerScore}`
+            console.log(`You Won! | ${totalScore}`)}
+
+        else if (win === "computer") {
+            computerScore += 1;
+            totalScore = `${playerScore}:${computerScore}`;
+            console.log(`Computer Won! | ${totalScore}`)}
+
+        else if (win === "draw") {
+            console.log(`It's a Draw! | ${totalScore}`)
+        }
+    }
+
+    function checkGame(playerMove,computerMove){
+        console.log(`Computer: ${computerMove} | Player: ${playerMove}`)
+
+        if (playerMove === "Rock" && computerMove === "Scissors") {
+            addScore("player")}
+        else if (playerMove === "Paper" && computerMove === "Rock") {
+            addScore("player")}
+        else if (playerMove === "Scissors" && computerMove === "Paper") {
+            addScore("player")}
+
+        else if (computerMove === "Rock" && playerMove === "Scissors") {
+            addScore("computer")}
+        else if (computerMove === "Paper" && playerMove === "Rock") {
+            addScore("computer")}
+        else if (computerMove === "Scissors" && playerMove === "Paper") {
+            addScore("computer")}
+
+        else if (computerMove === playerMove) {
+            addScore("draw")
+        }
+    }
+
+    function playGame(){
+        while (count < 5){
+        checkGame(playerChoice(),computerChoice());
+        count++
+            if (count === 5){
+                if (confirm("Do you want to continue?")) {
+                    count = 0
+                }}}
+        
+    }
+    playGame()
+
+</script>

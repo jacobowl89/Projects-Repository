@@ -1,0 +1,562 @@
+html {
+    line-height: 1.15;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0px solid black;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 19px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.inner-content, header, .personal-description, .newsletter-wrapper {
+    background-color: white;
+}
+
+all-content {
+    border: 1px solid rgb(214, 214, 214);
+}
+
+header {
+    margin-bottom: -3.3%;
+    position: relative;
+    box-shadow: 0px 10px 10px rgba(185, 183, 183, 0.247);
+    border: 0px solid rgb(214, 214, 214);
+}
+
+.inner-content {
+    padding-top: 5%;
+}
+
+.list-and-description {
+    margin: 3%;
+}
+
+.wrap-header, .header-full-menu {
+    display: flex;
+}
+
+.wrap-header {
+    padding: 12px;
+    justify-content: space-between;
+
+}
+
+.title {
+    max-width: 160px;
+}
+
+.header-full-menu {
+    min-width: 120px;
+    justify-content: space-evenly;
+}
+.header-menu-nav, .header-menu-magnifier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(214, 214, 214);
+    width: 50px;
+    margin: -13px;
+}
+
+.no-borders {
+    border-width: 0px;
+    z-index: 100;
+}
+
+nav {
+    border: 1px solid rgb(189, 187, 187);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 0px 25px;
+    background-color: rgb(240, 240, 240);   
+}
+
+nav a {
+    padding: 15px 0px 15px 0px;
+    border: solid rgb(214, 214, 214);
+    border-width: 0px 0px 1px 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+nav input {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    margin: 13px 0px 13px 0px;
+    border-radius: 0.2em;
+    border: 1px solid rgb(180, 180, 180);
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+}
+
+nav button[type="submit"] {
+    background-color: white;
+    border: 0px solid black;
+    width: fit-content;
+    position: absolute;
+    bottom: 23px;
+    right: 33px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav button[type="submit"]:hover {
+    transition: 0.3s;
+    color: #9a034e;
+}
+
+.dropdown-search-label {
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-menu-icon {
+    padding: 5px;
+}
+
+.first-foodlist {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.first-foodlist-category {
+    width: 32%;
+    box-shadow: inset 0px 0px 30px 0px black;
+}
+
+
+.foodlist-food-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    margin-top: -20%;
+    white-space: nowrap;
+    border-radius: 1em;
+    color: white;
+    font-weight: bold;
+    font-family: "Fjalla One",Impact,sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0.3vw 0.3vw 0.3vw black;    
+
+}
+
+
+.first-foodlist-category img {
+    border: 1px solid rgb(214, 214, 214);
+}
+
+img {
+    height: 100%;
+    width: 100%;    
+}
+
+.first-foodlist-firstrow, .first-foodlist-secondrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
+#floated{
+    float: right;
+}
+
+.personal-description, .first-foodlist, .newsletter-wrapper {
+    margin-bottom: 45px;
+}
+
+.personal-description-title {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.personal-description-picture {
+    width: 30%;
+    margin: 0px 0px 10px 10px;
+    margin: 5px;
+}
+
+.personal-description-text, .personal-description-title, .personal-description-button {
+    margin: 3%;
+}
+
+.katie-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+.personal-description-button {
+    transition: 0.13s;
+    background-color: #fb0880;
+    width: fit-content;
+    padding: 13px 19px;
+    border-radius: 0.1em;
+    color: white;
+    font-weight: bold;
+}
+
+.personal-description-button:hover {
+    transition: 0.13s;
+    cursor: pointer;
+    background-color: #da006d;
+
+}
+
+.newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fb0880;
+    color: white;
+    /* margin: -5px; */
+    
+}
+
+.newsletter-full-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.newsletter-title {
+    font-size: 16px;
+    padding: 12px 17px;
+    margin-top: 40px;
+    background-color: #9a034e;;
+    font-family: "Fjalla One",Impact,sans-serif;
+
+}
+
+
+.newsletter-description-one {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.newsletter-form {
+    width: 100%;
+}
+.newsletter-form-wrapper {
+    width: 100%;
+}
+
+.newsletter-email {
+    width: 90%;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 0.2em;
+}
+.newsletter-email:focus{
+    outline: none;
+}
+
+.newsletter-submit {
+    transition: 0.13s;
+    border: 0px solid black;
+    background-color: #32373c;
+    color: white;
+    border-radius: 0.3em;
+    width: 217px;
+    min-width: 217px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 18px 14px;
+}
+
+.newsletter-submit:hover {
+    transition: 0.13s;
+    background-color: #25282c;
+    cursor: pointer;
+}
+
+.newsletter-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.newsletter-picture-wrapper {
+    width: 90%;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    max-width: 400px;
+
+}
+
+.newsletter-title, .newsletter-description-one, .newsletter-description-two, .newsletter-email, .newsletter-submit {
+    margin-bottom: 2%;
+}
+
+.newsletter-title-and-form {
+    width: 100%;
+    /* display: flex; */
+}
+
+.newsletter-and-picutre {
+    display: flex;
+    background: #fb0880;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content-for-later {
+    height: 400px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(105, 105, 105);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    color: rgb(187, 187, 187);
+}
+.footer-socials div {
+    transition: 0.3s;
+    padding: 6px;
+    filter: invert(100%);
+}
+
+.footer-socials div:hover {
+    transition: 0.3s;
+    filter: invert(70%);
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 514px) and (max-width: 685px){
+    .personal-description-picture {
+        width: 25%;
+        margin: 0px 0px 10px 10px;
+        margin: 10px;
+    }
+    
+}
+
+@media only screen and (min-width: 686px) and (max-width: 1065px){
+    .personal-description-picture {
+        width: 22%;
+        margin: 0px 0px 20px 20px;
+        margin: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1065px){
+    .newsletter-wrapper {
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+    }
+    
+    .newsletter-picture-wrapper {
+        display: none;
+   }
+
+   .newsletter-form-wrapper {
+    display: flex;
+    justify-content: left;
+   }
+
+   .newsletter-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+   }
+
+   .newsletter-email{
+    width: 100%;
+   }
+
+   .newsletter-submit {
+    margin-left: 25px;
+   }
+
+   .newsletter-full-title {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+      }
+
+}
+
+
+@media only screen and (min-width: 1066px) {
+    .inner-content {
+        margin: 0px;
+    }
+    .list-and-description {
+        display: flex;
+    }
+
+    .personal-description {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .personal-description-picture {
+        width: 250px;
+        height: auto;
+
+    }
+
+    .personal-description-text {
+        width: 70%;
+        height: auto;
+    }
+
+    .first-foodlist {
+        width: 65%;
+    }
+
+    .first-foodlist-category {
+        width: 28%;
+    }
+
+    .foodlist-food-title {
+        font-size: 1.7vw;
+    }
+    
+    .first-foodlist-firstrow, .first-foodlist-secondrow {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5%;
+    }
+
+    .personal-description-text, .personal-description-title, .personal-description-button {
+        margin: 1.5%;
+    }
+
+
+
+    .newsletter-wrapper {
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        
+    }
+
+   .newsletter-form-wrapper {
+    display: flex;
+    justify-content: left;
+   }
+
+
+   .newsletter-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+   }
+
+   .newsletter-email{
+    width: 100%;
+    height: fit-content;
+   }
+
+   .newsletter-title {
+    font-size: 20px;
+   }
+   .newsletter-description-one {
+    font-size: 32px;
+   }
+
+   .newsletter-submit {
+    margin-left: 25px;
+    height: fit-content;
+
+   }
+
+   .newsletter-full-title {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    text-align: left;
+    padding-left: 25px;
+      }
+
+      
+
+      .newsletter-and-picutre {
+        display: flex;
+        background: #fb0880;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .newsletter-picture-wrapper {
+        margin: 25px;
+
+    }
+
+    .newsletter-title, .newsletter-description-one, .newsletter-description-two, .newsletter-email, .newsletter-submit {
+        margin-bottom: 3.5%;
+    }
+    
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js-file.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+    <div class="all-content">
+        <div class="header">
+            <div class="header-image">
+                <div class="image-wrapper">
+                    <img src="images/odin-lined.png" alt="">
+                    <span class="image-title">ODIN</span>
+                </div>
+            </div>
+
+            <div class="header-signup">
+                <div class="sign-up-description">
+                    <p>
+                    <span>Sign up <i>now</i> to get started</span>
+                    <br>
+                    <span>You <i>know</i> you want to.</span>
+                    </p>
+                </div>
+                <div class="sign-up-form">
+                    <div class="sign-up-form-title">
+                        Let's do this!
+                    </div>
+                    <form action='' method='get' class='speaker-form'>
+                        <div class='form-row'>
+                            <div class="input-wrapper">
+                                <label for='first-name'>FIRST NAME</label>
+                                <input id='first-name' name='first-name' type='text'/>        
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for='last-name'>LAST NAME</label>
+                                <input id='last-name' name='last-name' type='text'/>
+                            </div>
+                        </div>
+
+                        <div class='form-row'>
+                            <div class="input-wrapper">
+                                <label for='email'>EMAIL</label>
+                                <input id='email' name='email' type='email'/>        
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for='phone'>PHONE NUMBER</label>
+                                <input id='phone' name='phone' type='text'/>
+                            </div>
+                        </div>
+
+                        <div class='form-row'>
+                            <div class="input-wrapper">
+                                <label for='password'>PASSWORD</label>
+                                <input id='password' name='password' type='password' onkeyup="check();"/>
+                                <label for="password" id="message"></label>        
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for='confirm-password'>CONFIRM PASSWORD</label>
+                                <input id='confirm-password' name='confirm-password' type='password' onkeyup="check();"/>
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                    
+                </div>
+                <div class="sign-up-submit">
+                    <button class="create-account-button">Create Account</button>
+                </form>
+                <div class="remind-login">Already have an account? <span class="login-span">Log in</span> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

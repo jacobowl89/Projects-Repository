@@ -1,0 +1,178 @@
+@font-face {
+    font-family: odinFont;
+    src: url(fonts/Norse-Bold.ttf)
+}
+
+@font-face {
+    font-family: labelFont;
+    src: url(fonts//Inconsolata-VariableFont_wdth\,wght.ttf)
+}
+
+
+html, body {
+    height: 100%;
+    font-size: 25px;
+    font-family: labelFont;
+
+  }
+
+.header {
+    margin: auto;
+    width: 1200px;
+    height: 950px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+
+    display: flex;
+}
+
+
+.header-image {
+    background-image: url("images/sign-up-image1.avif");
+    color: aliceblue;
+    width: 40%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+.image-wrapper {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding:10px 190px 10px 190px;
+    margin-top: -300px;
+}
+
+.image-title {
+    font-size: 80px;
+    font-family: odinFont;
+}
+
+img {
+    width: 100%;
+}
+
+.header-signup {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-description {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    box-sizing: border-box;
+    height: 35%;
+    line-height: 40px;
+}
+
+.sign-up-description p {
+    margin-bottom: -80px;
+    font-weight: bold;
+}
+
+.sign-up-form { 
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    padding: 40px;
+    height: 21%;
+    box-shadow: -4px 2px 5px rgb(0, 0, 0, 20%);
+
+}
+
+.sign-up-form-title {
+    padding-bottom: 30px;
+    margin-top: -10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:8px;
+}
+
+.form-row {
+    display: flex;
+    justify-content:space-between;
+    width: 450px;
+    margin-bottom: 30px;
+}
+
+input {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 4px;
+    margin-top: 1px;
+    padding-left: 8px;
+    padding-right: 15px;
+}
+
+input:focus {
+    border: 1px solid rgba(0, 0, 255, 0.562);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 20%);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.input-wrapper {
+    line-height: 12px;
+}
+
+label {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    font-family: labelFont;
+    font-weight: bold;
+    display: block;
+  }
+
+.sign-up-submit {
+    padding: 30px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.create-account-button {
+    display: flex;
+    border: 0px solid black;
+    width: fit-content;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 78, 0, 0.603);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+}
+
+.remind-login{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+.login-span {
+    font-weight: bold;
+    color: rgba(0, 78, 0, 0.603);
+    cursor: pointer;
+}
+
+
+
+
+#message {
+    font-size: 9px;
+    font-weight: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js-file.js" defer></script>
+    
+</head>
+<body>
+    
+    <div class="all-content">
+        <div class="grid-container">
+            <div class="header">
+                <h1>LIBRARY</h1>
+            </div>
+            <div class="form-container">
+                <form action='' method='get' id="form-book">
+
+                    <label for='title'>TITLE</label>
+                    <input id='title' name='title' type='text' required/>  
+
+                    <label for='author'>AUTHOR</label>
+                    <input id='author' name='author' type='text'/>  
+
+                    <label for='pages'>PAGES</label>
+                    <input id='pages' name='pages' type='number'/>  
+
+                    <div class="input-radio-wrapper">
+                        <p>Have you read it?</p>
+                        <div class="radios">
+
+                            <label for='read-yes'>Yes</label>
+                            <input id='read-yes' name='read' type='radio' value="Yes"/>  
+                            
+                            <label for='read-no'>No</label>
+                            <input id='read-no' name='read' type='radio' value="No"/>  
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="button-wrapper">
+                        <button class="submit-btn" onClick="addBookToLibrary(this.form)" type="button">Add Book</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="books">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

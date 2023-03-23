@@ -1,0 +1,214 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('./fonts/EduNSWACTFoundation-VariableFont_wght.ttf');
+  }
+
+
+
+.all-content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: myFirstFont;
+}
+
+.grid-container {
+
+    width: 60vw;
+    margin: auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr;
+}
+
+.books, .form-container, .header {
+    border: 6px solid white;
+}
+
+.header {
+    grid-column: 1 / 3;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+.form-container {
+    columns: 1 / 2;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(225, 250, 215, 0.904);
+
+    padding-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px;
+}
+
+form input {
+    width: 90%;
+}
+
+form label {
+    margin-bottom: -12px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.input-radio-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-radio-wrapper p {
+    margin: 0;
+    margin-left: 3px;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.input-radio-wrapper .radios {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-radio-wrapper .radios, label {
+    padding: 5px;
+}
+
+#read-no, #read-yes {
+    margin-top: -8px;
+}
+
+form input {
+    outline: none;
+    border: 0px;
+    padding: 3px;
+    font-family: myFirstFont;
+    border-radius: 5px;
+}
+
+form input[type='radio'] {
+    
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 0px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn {
+    width: 120px;
+    height: 60px;
+    border: 0px solid black;
+    border-radius: 20px;
+    font-family: myFirstFont;
+    font-weight: bold;
+    background-color: none;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgba(245, 245, 245, 0.836);
+    scale: 1;
+}
+
+
+.submit-btn:hover {
+    transition: 0.2s;
+    opacity: 0.9;
+    color: rgba(0, 0, 0, 0.425);
+    scale: 0.9;
+}
+
+.submit-btn:active {
+    transition: 0.1s;
+    scale: 0.85;
+}
+
+
+
+.books {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(215, 230, 250, 0.904);
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.book {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items:stretch;
+}
+
+.book p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.book button {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 3px;
+    border: 0px solid black;
+    background-color: rgba(235, 235, 235, 0.726);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.book button:hover {
+    transition: 0.2s;
+    opacity: 0.5;
+    scale: 0.9;
+}
+
+.book button:active {
+    transition: 0.1s;
+    scale: 0.85;
+}
+
+
+
+.book .button-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+hr {
+    width: 90%;
+    color: rgba(0, 0, 0, 0.61);
+    border: 0;
+    height: 1px;
+    background: #333333b7;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}

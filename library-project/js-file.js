@@ -22,7 +22,7 @@ function Book(form) {
 }
 
 function addBookToLibrary(form) {
-  let newBook = Book(form);
+  let newBook = new Book(form);
 
   readValue = form.read.value;
 
@@ -44,11 +44,11 @@ function showBooks(library) {
     if (readValue == `No`) {
       booksHTML =
         booksHTML +
-        `<div id="book${i}" class="book"><p>Title: ${titleValue}, Author: ${authorValue}, Pages: ${pagesValue}, Read: ${readValue}</p><div class="button-wrapper"><button id="${i}" class="eye" onClick="changeReadValue(this.id)">${noReadSvg}</button><button id="${i}" onClick="deleteBook(this.id)">x</button></div></div>`;
+        `<div id="book${i}" class="book"><p><b>Title:</b> ${titleValue} <b>Author:</b> ${authorValue} <b>Pages:</b> ${pagesValue} <b>Read:</b> ${readValue}</p><div class="button-wrapper"><button id="${i}" class="eye" onClick="changeReadValue(this.id)">${noReadSvg}</button><button id="${i}" onClick="deleteBook(this.id)">x</button></div></div>`;
     } else {
       booksHTML =
         booksHTML +
-        `<div id="book${i}" class="book"><p>Title: ${titleValue}, Author: ${authorValue}, Pages: ${pagesValue}, Read: ${readValue}</p><div class="button-wrapper"><button id="${i}" class="eye" onClick="changeReadValue(this.id)">${yesReadSvg}</button><button id="${i}" onClick="deleteBook(this.id)">x</button></div></div>`;
+        `<div id="book${i}" class="book"><p><b>Title:</b> ${titleValue} <b>Author:</b> ${authorValue} <b>Pages:</b> ${pagesValue} <b>Read:</b> ${readValue}</p><div class="button-wrapper"><button id="${i}" class="eye" onClick="changeReadValue(this.id)">${yesReadSvg}</button><button id="${i}" onClick="deleteBook(this.id)">x</button></div></div>`;
     }
 
     if (i != library.length - 1) {
